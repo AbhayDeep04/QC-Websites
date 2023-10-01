@@ -1,0 +1,317 @@
+.navbar{
+    padding:0;
+}
+
+.title-icon{
+    border-radius: 40%;
+}
+
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+.nav-link{
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+.dropdown-item{
+    font-family: 'Righteous', cursive;
+}
+
+/* CODE RED INITIATE */
+
+.zoom-text {
+  display: inline-block;
+}
+
+.zoom-effect {
+  display: inline-block;
+  transition: transform 0.3s;
+  background: linear-gradient(to right, white, #ebebeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.zoom-text-mid {
+  display: inline-block;
+}
+
+.zoom-effect-mid {
+  display: inline-block;
+  transition: transform 0.3s;
+  background: linear-gradient(to left, white, #4F709C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+.zoom-effect-mid:hover {
+  transform: scale(1.1);
+}
+ 
+/* CODE RED END */ 
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+#gradient-background {
+  background: linear-gradient(300deg, #171717, black, #171717);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+.name-line{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 5%;
+}
+
+.quote{
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+.intro{
+  padding-top: 5%;
+}
+
+.dropdown-menu{
+  background-color: #d5c2da;
+}
+
+.rounded-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+}
+
+.rounded-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 6px;
+  border-radius: 2px;
+  background: linear-gradient(300deg,#FF0000,#0000FF,#4B0082,#8B00FF);
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.title-text{
+  background: linear-gradient(to left, #FF0000,#0000FF,#4B0082,#8B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+  display: inline;
+}
+
+#comp-sci {
+  display: flex;
+  justify-content: center;
+  color: #e1dae3;
+  font-size: 5rem;
+  padding-top: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.2em; /* Adjust the value as needed */
+}
+
+.rainbow{
+  background: linear-gradient(to left, #FF0000,#0000FF,#4B0082,#8B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.middle-container{
+  padding-top: 40px ;
+  height: 200vh;
+  background-color: #1C1C1C;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 14px; /* Adjust the width of the scrollbar */
+}
+
+/* Modify the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #444444; /* Replace with the desired color */
+  border-radius: 10px; /* Adjust the border-radius to make it rounded */
+}
+
+/* Modify the color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #171717; /* Replace with the desired color */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: pink;
+}
+
+.about-title{
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.4em;
+}
+
+
+@media (max-width:1000px){
+  .name-line{
+    font-size: 3rem;
+  }
+
+  #comp-sci{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .about-title{
+    font-size: 2rem;
+  }
+
+  .my-img {
+   max-width: 100%;
+    width: 50%;
+    height: auto;
+  }
+  
+}
+
+.info{
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-family: 'Merriweather', serif;
+  margin: 3% 23% 6% 23%;
+}
+
+/* Navbar styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    color: black; /* Change color for better visibility on smaller screens */
+  }
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item:hover .nav-link {
+    color: pink;
+  }
+}
+
+/* Intro section styles for smaller screens */
+@media (max-width: 600px) {
+  .name-line {
+    font-size: 2rem;
+  }
+  .quote {
+    font-size: 1.8rem;
+  }
+}
+
+/* About section styles for smaller screens */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 4rem;
+  }
+  .info {
+    margin: 3% 10% 3% 10%;
+  }
+}
+
+/* Image styles for smaller screens */
+@media (max-width: 768px) {
+  .my-img {
+    width: 80%;
+  }
+}
+
+/* Adjust height of the middle container for smaller screens */
+@media (max-width: 768px) {
+  .middle-container {
+    height: auto;
+  }
+}
+
+/* Adjust padding of the intro section for smaller screens */
+@media (max-width: 600px) {
+  .intro {
+    padding-top: 2%;
+  }
+}
+
+.card-text{
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+.card-img-top{
+  height: 22rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 22rem;
+  max-width: 100%;
+  background-color: #262626;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/*---------------------------------*/
+
+.grid-info{
+  display:grid;
+  height: 50vh;
+  gap: 3rem;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
